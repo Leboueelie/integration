@@ -11,7 +11,7 @@
 
 :root {
   --ink: #1d1d1f;
-  --muted: #8a8a8e;
+  --muted: #6e6e73;
   --line: #e4e4e6;
   --gap: 36px;
   --font: "Avenir", "Roboto", "Helvetica Neue", Arial, sans-serif;
@@ -34,8 +34,8 @@ button, input, select { font: inherit; color: inherit; }
 .logo { width: 61px; height: 61px; background: var(--ink); display: grid; place-items: center; }
 .logo svg { width: 28px; height: 28px; }
 .main-nav ul { display: flex; gap: 38px; }
-.main-nav a, .login { font: 500 12px var(--font); text-transform: uppercase; letter-spacing: .02em; }
-.cart-link { margin-left: auto; }
+.main-nav a, .login { font: 500 12px var(--font); text-transform: uppercase; letter-spacing: .02em; display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: 0 8px; }
+.cart-link { margin-left: auto; display: inline-flex; align-items: center; min-width: 44px; min-height: 44px; }
 .login { margin-left: 0; }
 .burger { display: none; }
 
@@ -43,13 +43,13 @@ button, input, select { font: inherit; color: inherit; }
 .search-bar { display: grid; grid-template-columns: 61px 1fr 259px; gap: 36px; align-items: end; margin-top: 24px; }
 .search-ico { width: 40px; height: 40px; align-self: center; justify-self: center; }
 .search-field { position: relative; border-bottom: 2px solid var(--ink); }
-.search-field input { width: 100%; border: 0; background: none; padding: 4px 0 8px; font: 500 22px var(--font); outline-offset: 4px; }
+.search-field input { width: 100%; border: 0; background: none; padding: 4px 0 8px; font: 500 22px var(--font); outline-offset: 4px; min-height: 44px; }
 .algolia { position: absolute; right: 0; bottom: 10px; font: 400 11px "Roboto", Arial, sans-serif; }
 .algolia b { font-weight: 700; }
 
 /* ---------- Selects ---------- */
 .select-wrap { position: relative; border-bottom: 2px solid var(--line); }
-.select-wrap select { width: 100%; appearance: none; border: 0; background: none; padding: 10px 24px 10px 0; cursor: pointer; }
+.select-wrap select { width: 100%; appearance: none; border: 0; background: none; padding: 10px 24px 10px 0; cursor: pointer; min-height: 44px; }
 .select-wrap::after { content: ""; position: absolute; right: 4px; top: 50%; width: 7px; height: 7px; border: solid var(--ink); border-width: 0 2px 2px 0; transform: translateY(-70%) rotate(45deg); pointer-events: none; }
 .sort select { font: 400 22px var(--font); padding: 4px 30px 8px 0; }
 .sort::after { width: 10px; height: 10px; }
@@ -63,9 +63,9 @@ button, input, select { font: inherit; color: inherit; }
 .filters .select-wrap { margin-bottom: 6px; }
 .range { border: 0; padding: 0; margin: 14px 0 0; min-width: 0; }
 .range legend { padding: 0; margin-bottom: 18px; }
-.range-track { position: relative; height: 16px; }
+.range-track { position: relative; height: 44px; }
 .range-track::before { content: ""; position: absolute; left: 6px; right: 6px; top: 7px; height: 2px; background: var(--line); }
-.range-track input { position: absolute; inset: 0; width: 100%; margin: 0; appearance: none; background: none; pointer-events: none; }
+.range-track input { position: absolute; inset: 0; width: 100%; height: 44px; margin: 0; appearance: none; background: none; pointer-events: none; }
 .range-track input::-webkit-slider-thumb { appearance: none; pointer-events: auto; width: 13px; height: 13px; border-radius: 50%; border: 2px solid var(--ink); background: #fff; cursor: pointer; }
 .range-track input::-moz-range-thumb { pointer-events: auto; width: 9px; height: 9px; border-radius: 50%; border: 2px solid var(--ink); background: #fff; cursor: pointer; }
 .range-labels { display: flex; justify-content: space-between; font-size: 11px; margin-top: 8px; }
@@ -77,13 +77,13 @@ button, input, select { font: inherit; color: inherit; }
 .price { grid-area: price; font: 500 14px var(--font); }
 .cat { grid-area: cat; font: 400 11px var(--font); text-transform: uppercase; color: var(--muted); margin-top: 4px; }
 .stars { grid-area: stars; font-size: 12px; letter-spacing: 2px; }
-.add { grid-area: add; align-self: end; justify-self: end; background: none; border: 0; padding: 0; cursor: pointer; }
+.add { grid-area: add; align-self: end; justify-self: end; background: none; border: 0; padding: 8px; margin: -8px; cursor: pointer; min-width: 44px; min-height: 44px; display: grid; place-items: center; }
 .add .ico { width: 28px; height: 28px; }
 
 /* ---------- Pagination ---------- */
 .pagination { margin: 56px 0 40px; }
 .pagination ul { display: flex; align-items: center; }
-.pagination a { display: grid; place-items: center; min-width: 36px; height: 36px; margin-right: 22px; font: 500 12px var(--font); }
+.pagination a { display: grid; place-items: center; min-width: 44px; height: 44px; margin-right: 22px; font: 500 12px var(--font); }
 .pagination a.current { background: var(--ink); color: #fff; margin-right: 22px; }
 
 /* ---------- Footer ---------- */
@@ -96,7 +96,7 @@ button, input, select { font: inherit; color: inherit; }
   .main-nav ul { flex-direction: column; gap: 14px; }
   #menu-toggle:checked ~ .main-nav { display: block; }
   .login { display: none; }
-  .burger { display: block; width: 24px; padding: 8px 0; cursor: pointer; }
+  .burger { display: block; width: 44px; padding: 10px 0; cursor: pointer; }
   .burger span, .burger span::before, .burger span::after { display: block; height: 2px; background: var(--ink); }
   .burger span { position: relative; }
   .burger span::before, .burger span::after { content: ""; position: absolute; left: 0; right: 0; }
