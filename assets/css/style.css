@@ -1,13 +1,12 @@
 /* ---------- Fonts ----------
-   Avenir est une police sous licence : place tes fichiers dans /fonts
-   (Avenir-Book.woff2, Avenir-Medium.woff2, Avenir-Heavy.woff2).
-   Sans fichiers, le navigateur utilise Avenir installée, sinon Roboto (Google Fonts). */
+   Avenir : utilisée si installée sur le poste (police sous licence, non redistribuée).
+   Fallback : Roboto (Google Fonts, importée dans index.html). */
 @font-face { font-family: "Avenir"; font-weight: 400; font-display: swap;
-  src: local("Avenir Book"), local("Avenir-Book"), url("../fonts/Avenir-Book.woff2") format("woff2"); }
+  src: local("Avenir Book"), local("Avenir-Book"); }
 @font-face { font-family: "Avenir"; font-weight: 500; font-display: swap;
-  src: local("Avenir Medium"), local("Avenir-Medium"), url("../fonts/Avenir-Medium.woff2") format("woff2"); }
+  src: local("Avenir Medium"), local("Avenir-Medium"); }
 @font-face { font-family: "Avenir"; font-weight: 800; font-display: swap;
-  src: local("Avenir Heavy"), local("Avenir-Heavy"), url("../fonts/Avenir-Heavy.woff2") format("woff2"); }
+  src: local("Avenir Heavy"), local("Avenir-Heavy"); }
 
 :root {
   --ink: #1d1d1f;
