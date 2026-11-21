@@ -13,12 +13,13 @@ Intégration fidèle d'une maquette graphique d'une boutique de meubles de salon
 ```
 .
 ├── index.html
-├── style.css
 ├── assets/
 │   ├── css/
-│   └── images/        # images produits temporaires
+│   │   └── style.css
+│   ├── images/        # images produits
+│   └── js/
+│       └── stars.js
 ├── integration-design-and-assets/  # maquettes et icônes source
-├── *.jpg              # visuels temporaires
 └── README.md
 ```
 
