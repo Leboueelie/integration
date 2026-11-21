@@ -30,7 +30,7 @@ button, input, select { font: inherit; color: inherit; }
 
 /* ---------- Header ---------- */
 .top, main { max-width: 1190px; margin: 0 auto; padding: 0 25px; }
-.top { display: flex; align-items: center; gap: 36px; }
+.top { display: flex; align-items: center; gap: 0; }
 .logo { width: 61px; height: 61px; background: var(--ink); display: grid; place-items: center; }
 .logo svg { width: 28px; height: 28px; }
 .main-nav ul { display: flex; gap: 38px; }
