@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Living room furniture – Shop | Search our collection</title>
+  <meta name="description" content="Browse our living room furniture: sofas, armchairs, tables, chairs and shelves. Filter by collection, color, category and price.">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap">
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#1d1d1f">
+  <link rel="canonical" href="./">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="cart" viewBox="0 0 24 24"><path d="M2 3h3l2.2 11h10.6L20 6H6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 18h9M9 21.2a1 1 0 100-.01M16 21.2a1 1 0 100-.01" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="cart-plus" viewBox="0 0 24 24"><use href="#cart"/><path d="M12 6.5v5M9.5 9h5" stroke="currentColor" stroke-width="1.6" fill="none"/></symbol>
+    <symbol id="search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M15 15l7 7" stroke="currentColor" stroke-width="1.4"/></symbol>
+    <symbol id="chev" viewBox="0 0 24 24"><path d="M5 9l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  </svg>
+
+  <header class="top">
+    <a class="logo" href="#" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14v3H5zM5 12h9v3H5zM5 17h5v2H5z" fill="#fff"/></svg></a>
+    <input type="checkbox" id="menu-toggle" class="toggle" hidden>
+    <nav class="main-nav" aria-label="Main">
+      <ul><li><a href="#">Home</a></li><li><a href="#">Shop</a></li><li><a href="#">Magazine</a></li></ul>
+    </nav>
+    <a class="cart-link" href="#" aria-label="Cart"><svg class="ico" aria-hidden="true"><use href="#cart"/></svg></a>
+    <a class="login" href="#">Login</a>
+    <label for="menu-toggle" class="burger" aria-label="Menu"><span></span></label>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden">Living room furniture</h1>
+    <form class="search-bar" role="search" action="#" method="get">
+      <svg class="ico search-ico" aria-hidden="true"><use href="#search"/></svg>
+      <div class="search-field">
+        <label class="visually-hidden" for="q">Search products</label>
+        <input id="q" name="q" type="search" value="living room">
+        <span class="algolia">Powered by <b>Algolia</b></span>
+      </div>
+      <div class="select-wrap sort">
+        <label class="visually-hidden" for="sort">Sort by</label>
+        <select id="sort" name="sort"><option>Best match</option><option>Price ascending</option><option>Price descending</option></select>
+      </div>
+    </form>
+
+    <input type="checkbox" id="filters-toggle" class="toggle" hidden>
+    <label for="filters-toggle" class="filters-btn">Filters</label>
+
+    <div class="grid">
+      <aside class="filters" aria-label="Filters">
+        <p class="filter-title">Filter by</p>
+        <div class="select-wrap"><label class="visually-hidden" for="f-col">Collection</label><select id="f-col"><option>Collection</option></select></div>
+        <div class="select-wrap"><label class="visually-hidden" for="f-color">Color</label><select id="f-color"><option>Color</option></select></div>
+        <div class="select-wrap"><label class="visually-hidden" for="f-cat">Category</label><select id="f-cat"><option>Category</option></select></div>
+        <fieldset class="range">
+          <legend>Price Range</legend>
+          <div class="range-track">
+            <input type="range" min="0" max="10000" value="0" aria-label="Minimum price">
+            <input type="range" min="0" max="10000" value="10000" aria-label="Maximum price">
+          </div>
+          <p class="range-labels"><span>$0</span><span>$10,000+</span></p>
+        </fieldset>
+      </aside>
+      <ul class="products">
+        <li>
+          <article class="card">
+            <img src="images/coombes.jpg" width="600" height="516" alt="Dark grey corner sofa in a bright living room" loading="lazy">
+            <div class="card-body">
+              <h2>Coombes</h2><p class="price">$2,600</p>
+              <p class="cat">Lounge</p>
+              <button class="add" type="button" aria-label="Ajouter Coombes au panier"><svg class="ico" aria-hidden="true"><use href="#cart-plus"/></svg></button>
+              <p class="stars" role="img" aria-label="Note : 4 sur 5">★★★★☆</p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <img src="images/keeve-set.jpg" width="600" height="516" alt="Round table and light wood chair" loading="lazy">
+            <div class="card-body">
+              <h2>Keeve Set</h2><p class="price">$590</p>
+              <p class="cat">Table &amp; chairs</p>
+              <button class="add" type="button" aria-label="Ajouter Keeve Set au panier"><svg class="ico" aria-hidden="true"><use href="#cart-plus"/></svg></button>
+              <p class="stars" role="img" aria-label="Note : 4 sur 5">★★★★☆</p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <img src="images/nille.jpg" width="600" height="516" alt="Two yellow tufted armchairs under a tree" loading="lazy">
+            <div class="card-body">
+              <h2>Nillè</h2><p class="price">$950</p>
+              <p class="cat">Armchair</p>
+              <button class="add" type="button" aria-label="Ajouter Nillè au panier"><svg class="ico" aria-hidden="true"><use href="#cart-plus"/></svg></button>
+              <p class="stars" role="img" aria-label="Note : 5 sur 5">★★★★★</p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <img src="images/blanko.jpg" width="600" height="516" alt="White side table with alarm clock" loading="lazy">
+            <div class="card-body">
+              <h2>Blanko</h2><p class="price">$90</p>
+              <p class="cat">Side table</p>
+              <button class="add" type="button" aria-label="Ajouter Blanko au panier"><svg class="ico" aria-hidden="true"><use href="#cart-plus"/></svg></button>
+              <p class="stars" role="img" aria-label="Note : 4 sur 5">★★★★☆</p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <img src="images/momo.jpg" width="600" height="516" alt="Bookshelf filled with books" loading="lazy">
+            <div class="card-body">
+              <h2>Momo</h2><p class="price">$890</p>
+              <p class="cat">Shelves</p>
+              <button class="add" type="button" aria-label="Ajouter Momo au panier"><svg class="ico" aria-hidden="true"><use href="#cart-plus"/></svg></button>
+              <p class="stars" role="img" aria-label="Note : 4 sur 5">★★★★☆</p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <img src="images/penemille.jpg" width="600" height="516" alt="White shell chair with wooden legs" loading="lazy">
+            <div class="card-body">
+              <h2>Penemillè</h2><p class="price">$120</p>
+              <p class="cat">Chair</p>
+              <button class="add" type="button" aria-label="Ajouter Penemillè au panier"><svg class="ico" aria-hidden="true"><use href="#cart-plus"/></svg></button>
+              <p class="stars" role="img" aria-label="Note : 4 sur 5">★★★★☆</p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <img src="images/kappu.jpg" width="600" height="516" alt="Dark wood shelf with coffee beans" loading="lazy">
+            <div class="card-body">
+              <h2>Kappu</h2><p class="price">$420</p>
+              <p class="cat">Shelves</p>
+              <button class="add" type="button" aria-label="Ajouter Kappu au panier"><svg class="ico" aria-hidden="true"><use href="#cart-plus"/></svg></button>
+              <p class="stars" role="img" aria-label="Note : 4 sur 5">★★★★☆</p>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+
+    <nav class="pagination" aria-label="Pagination">
+      <ul>
+<li><a href="#" class="current" aria-current="page">1</a></li>
+<li><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#" data-extra>5</a></li>
+<li><a href="#" data-extra>6</a></li>
+<li><a href="#" data-extra>7</a></li>
+<li><a href="#" data-extra>8</a></li>
+<li><a href="#" data-extra>9</a></li>
+<li><a href="#" data-extra>10</a></li>
+<li><a href="#" aria-label="Next page">&gt;</a></li>
+      </ul>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Living room furniture – Shop. All rights reserved.</p>
+  </footer>
+</body>
+</html>
