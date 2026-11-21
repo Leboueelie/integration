@@ -29,7 +29,7 @@ button, input, select { font: inherit; color: inherit; }
 :focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
 
 /* ---------- Header ---------- */
-.top, main { max-width: 1190px; margin: 0 auto; padding: 0 25px; }
+.top, main { max-width: 1190px; margin: 0; padding: 0 25px; }
 .top { display: flex; align-items: center; gap: 0; }
 .logo { width: 61px; height: 61px; background: var(--ink); display: grid; place-items: center; }
 .logo svg { width: 28px; height: 28px; }
@@ -87,7 +87,7 @@ button, input, select { font: inherit; color: inherit; }
 .pagination a.current { background: var(--ink); color: #fff; margin-right: 22px; }
 
 /* ---------- Footer ---------- */
-.site-footer { max-width: 1190px; margin: 0 auto; padding: 24px 25px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+.site-footer { max-width: 1190px; margin: 0; padding: 24px 25px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
 
 /* ---------- Mobile ---------- */
 @media (max-width: 800px) {
